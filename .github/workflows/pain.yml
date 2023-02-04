@@ -102,12 +102,3 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: .net-app
-
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: "dotnet-github-actions"
-          slot-name: "Production"
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E64C1F65FD5A45429194BC69F425135D }}
-          package: .
