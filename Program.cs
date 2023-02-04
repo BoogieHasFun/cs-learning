@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace cs_learning;
 
-class Program
+class Program }
 class cslearning
 {
     static void Main(string[] args)
