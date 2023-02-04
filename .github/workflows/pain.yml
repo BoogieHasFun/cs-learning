@@ -61,7 +61,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .net-app
-          path:  /home/runner/work/cs-learning/cs-learning
+          path:  /home/runner/work/cs-learning/cs-learning/bin/Release/net6.0/win-x64
 
 
   deploy:
