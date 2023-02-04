@@ -3,10 +3,10 @@ using System.Diagnostics;
 using System;
 using System.Reflection;
 
-namespace cs_learning;
-
-class Program }
-class cslearning
+<<<<<<< HEAD
+namespace cs_learning
+{
+ class cslearning
 {
     static void Main(string[] args)
     {
@@ -67,6 +67,5 @@ class cslearning
 	    }
     }
 }
-// it's unreadable
-// sorry.
+}
 
