@@ -1,6 +1,7 @@
 name: Build and deploy ASP.Net Core app to Azure Web App - dotnet-github-actions
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
