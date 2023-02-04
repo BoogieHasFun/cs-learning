@@ -54,25 +54,6 @@ jobs:
       - name: Restore global tools
         run: dotnet tool restore
 
-     
-
-      - name: Find code coverage files
-        id: find-files
-        uses: ./GitHubAction
-        with:
-          pattern: "**/coverage.cobertura.xml"
-
-     
-
-      - name: Create check run for code coverage
-        uses: LouisBrunner/checks-action@v1.2.0
-        if: always()
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          name: Code coverage
-          conclusion: ${{ job.status }}
-          output: '{"summary":"${{ steps.find-files.outputs.files }}"}'
-          output_text_description_file: coverage/Summary.md
 
       - name: dotnet publish
         run: dotnet publish ./WebApi/WebApi.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
