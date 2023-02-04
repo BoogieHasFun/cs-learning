@@ -55,15 +55,6 @@ jobs:
         run: dotnet tool restore
 
 
-      - name: dotnet publish
-        run: dotnet publish ./WebApi/WebApi.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
-
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
-        with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
-
   deploy:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
