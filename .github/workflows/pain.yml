@@ -58,7 +58,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/cs-learning
+          path:  /home/runner/work/cs-learning/cs-learning
 
 
   deploy:
