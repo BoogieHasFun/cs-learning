@@ -19,7 +19,7 @@ jobs:
         - name: Install dependencies
           run: dotnet restore
         - name: Test with dotnet
-          run: dotnet build --no-restore --results-directory "TestResults-${{ matrix.dotnet-version }}"
+          run: dotnet build --results-directory "TestResults-${{ matrix.dotnet-version }}"
         - name: Upload dotnet test results
           uses: actions/upload-artifact@v3
           with:
