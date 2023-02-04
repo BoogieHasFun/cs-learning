@@ -77,3 +77,21 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: .net-app
+          
+      - name: Github Release
+      - id: new-release
+      # You may pin to the exact commit or the version.
+      # uses: elgohr/Github-Release-Action@ca832ba34444ca850517764d948a8fb0e16c5747
+        uses: elgohr/Github-Release-Action@v4
+        with:
+             title: cs-learning
+      - name: upload release asset    
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.new-release.outputs.url }}
+          asset_path: .net-app
+          asset_name: netapp
+          asset_content_type: application/zip
+          
