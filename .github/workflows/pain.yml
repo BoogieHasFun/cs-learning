@@ -45,9 +45,12 @@ jobs:
           key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
           restore-keys: |
             ${{ runner.os }}-nuget-
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
+      - name: Build with dotnet (win-64)
+        run: dotnet build --configuration Release --runtime win-x64
 
+      - name: Build with dotnet (if win64 doesn't work)
+        run: dotnet build --configuration Release 
+        
       - name: Test
         run: dotnet test --logger trx --collect:"XPlat Code Coverage"
 
