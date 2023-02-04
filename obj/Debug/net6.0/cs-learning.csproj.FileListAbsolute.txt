@@ -1,0 +1,15 @@
+D:\dev apps\projects\cs-learning\bin\Debug\net6.0\cs-learning.exe
+D:\dev apps\projects\cs-learning\bin\Debug\net6.0\cs-learning.deps.json
+D:\dev apps\projects\cs-learning\bin\Debug\net6.0\cs-learning.runtimeconfig.json
+D:\dev apps\projects\cs-learning\bin\Debug\net6.0\cs-learning.dll
+D:\dev apps\projects\cs-learning\bin\Debug\net6.0\cs-learning.pdb
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\cs-learning.csproj.AssemblyReference.cache
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\cs-learning.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\cs-learning.AssemblyInfoInputs.cache
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\cs-learning.AssemblyInfo.cs
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\cs-learning.csproj.CoreCompileInputs.cache
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\cs-learning.dll
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\refint\cs-learning.dll
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\cs-learning.pdb
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\cs-learning.genruntimeconfig.cache
+D:\dev apps\projects\cs-learning\obj\Debug\net6.0\ref\cs-learning.dll
