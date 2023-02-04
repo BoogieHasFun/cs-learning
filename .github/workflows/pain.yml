@@ -54,8 +54,7 @@ jobs:
       - name: Restore global tools
         run: dotnet tool restore
 
-      - name: Report Generator
-        run: dotnet reportgenerator -reports:**/coverage.cobertura.xml -targetdir:./coverage -reporttypes:MarkdownSummary
+     
 
       - name: Find code coverage files
         id: find-files
@@ -63,13 +62,7 @@ jobs:
         with:
           pattern: "**/coverage.cobertura.xml"
 
-      - name: Test Report
-        uses: dorny/test-reporter@v1
-        if: success() || failure()
-        with:
-          name: Tests
-          path: WebApi.Tests/TestResults/*.trx
-          reporter: dotnet-trx
+     
 
       - name: Create check run for code coverage
         uses: LouisBrunner/checks-action@v1.2.0
