@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System;
 using System.Reflection;
 
-<<<<<<< HEAD
+
 namespace cs_learning
 {
  class cslearning
