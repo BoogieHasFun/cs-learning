@@ -80,7 +80,7 @@ jobs:
           
   #   - id: new-release
       # You may pin to the exact commit or the version.
-      # uses: elgohr/Github-Release-Action@ca832ba34444ca850517764d948a8fb0e16c5747
+      # uses: elgohr/Github-Release-Action@v4
  #       uses: elgohr/Github-Release-Action@v4
  #       with:
   #           title: cs-learning
